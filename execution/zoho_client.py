@@ -104,6 +104,8 @@ class ZohoClient:
         response = requests.post(url, params=params)
         response.raise_for_status()
         data = response.json()
+        if "access_token" not in data:
+            print(f"DEBUG: Token refresh response error: {data}")
         self._access_token = data["access_token"]
         return self._access_token
 
