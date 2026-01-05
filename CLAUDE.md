@@ -79,9 +79,9 @@ The system supports event-driven execution via Modal webhooks. Each webhook maps
 - `directives/add_webhook.md` - Complete setup guide
 
 **Endpoints:**
-- `https://nick-90891--claude-orchestrator-list-webhooks.modal.run` - List webhooks
-- `https://nick-90891--claude-orchestrator-directive.modal.run?slug={slug}` - Execute directive
-- `https://nick-90891--claude-orchestrator-test-email.modal.run` - Test email
+- `https://ran-ai-agency--claude-orchestrator-list-webhooks.modal.run` - List webhooks
+- `https://ran-ai-agency--claude-orchestrator-directive.modal.run?slug={slug}` - Execute directive
+- `https://ran-ai-agency--claude-orchestrator-test-email.modal.run` - Test email
 
 **Available tools for webhooks:** `send_email`, `read_sheet`, `update_sheet`
 
