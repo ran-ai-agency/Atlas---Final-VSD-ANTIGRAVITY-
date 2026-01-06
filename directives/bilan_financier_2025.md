@@ -20,20 +20,21 @@ Générer un bilan financier complet de Ran.AI Agency pour l'année 2025, inclua
 - Recommandations pour 2026
 
 ## Outils Utilisés
-- **Zoho Books API**: Récupération des données financières
-- **Script**: `execution/generate_financial_report_2025.py`
-- **Client**: `execution/zoho_client.py`
+- **Zoho Books MCP**: Récupération des données financières via MCP Server
+
+## Configuration MCP
+Variables dans `.env`:
+- `MCP_ZOHO_BOOKS_URL` - URL du MCP Zoho Books
+- `MCP_ZOHO_BOOKS_KEY` - Clé API du MCP
 
 ## Workflow
 
-### 1. Récupération des Données
-```python
-# Utiliser zoho_client.py pour récupérer:
+### 1. Récupération des Données via MCP
+Utiliser Zoho Books MCP pour récupérer:
 - Toutes les factures de 2025 (payées, impayées, annulées)
 - Toutes les dépenses de 2025
 - Liste des clients avec revenus associés
 - État de la trésorerie au 31/12/2025
-```
 
 ### 2. Calculs Financiers
 
@@ -191,7 +192,7 @@ Le rapport doit inclure:
 
 ## 📝 Notes Méthodologiques
 
-- **Source des données**: Zoho Books API
+- **Source des données**: Zoho Books MCP
 - **Périmètre**: Toutes les factures et dépenses de 2025
 - **CA comptabilisé**: Factures payées uniquement
 - **Taux de change**: EUR (devise de référence)
@@ -200,7 +201,7 @@ Le rapport doit inclure:
 ## Gestion des Erreurs
 
 - Si aucune donnée 2025 disponible: Alerter l'utilisateur
-- Si API Zoho indisponible: Proposer de réessayer
+- Si MCP Zoho indisponible: Vérifier la configuration dans `.env` et réessayer
 - Si données incomplètes: Mentionner les limitations dans le rapport
 
 ## KPIs de Qualité
@@ -211,7 +212,7 @@ Le rapport doit inclure:
 - Pertinence des recommandations
 
 ## Notes
-- Toujours utiliser les données réelles de Zoho Books
+- Toujours utiliser Zoho Books MCP (jamais l'API directe)
 - Comparer avec les objectifs définis dans `cfo.md`
 - Présenter les données de manière visuelle (tableaux)
 - Fournir du contexte et des insights, pas seulement des chiffres
