@@ -89,9 +89,9 @@ mcpServers:
   # Zoho Books Integration (57 outils - lourd, désactivé par défaut)
   zoho-books:
     type: streamable-http
-    url: "https://zohobooks-110002203871.zohomcp.ca/mcp/message?key=83dbcaeb92ce495f6db617540ecc6f90"
+    url: "https://zohobooks-110002203871.zohomcp.ca/mcp/message?key=fe27da4127ce343dfb37c45a220fa5d7"
     timeout: 60000
-    chatMenu: false
+    chatMenu: true
 
   # Notion Integration (OAuth requis)
   notion:

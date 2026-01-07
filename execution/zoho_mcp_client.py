@@ -71,12 +71,14 @@ class ZohoMCPClient:
         }
         
         headers = {
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {key}"
+            "Content-Type": "application/json"
         }
-        
+
+        # Ajouter la cle comme parametre de query
+        url_with_key = f"{url}?key={key}"
+
         try:
-            response = requests.post(url, json=payload, headers=headers, timeout=30)
+            response = requests.post(url_with_key, json=payload, headers=headers, timeout=30)
             response.raise_for_status()
             
             result = response.json()
