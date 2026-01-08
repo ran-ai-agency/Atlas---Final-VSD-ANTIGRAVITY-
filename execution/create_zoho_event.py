@@ -63,17 +63,20 @@ class ZohoCalendarClient:
                      calendar_uid: str = "033c7928ba314969a0a0a6b5119ac590") -> dict:
         """Crée un événement dans Zoho Calendar"""
 
-        # Format Zoho: YYYYMMDDTHHMMSS-0500 (avec timezone offset)
-        start_str = start.strftime('%Y%m%dT%H%M%S') + "-0500"
-        end_str = end.strftime('%Y%m%dT%H%M%S') + "-0500"
+        # Format Zoho: YYYYMMDDTHHMMSSZ (UTC)
+        # Convertir l'heure locale (America/Toronto = UTC-5) en UTC
+        from datetime import timedelta
+        start_utc = start + timedelta(hours=5)
+        end_utc = end + timedelta(hours=5)
+
+        start_str = start_utc.strftime('%Y%m%dT%H%M%S') + 'Z'
+        end_str = end_utc.strftime('%Y%m%dT%H%M%S') + 'Z'
 
         result = self._call("tools/call", {
             "name": "ZohoCalendar_addEvent",
             "arguments": {
-                "path_params": {
-                    "caluid": calendar_uid
-                },
-                "body_params": {
+                "body": {
+                    "caluid": calendar_uid,
                     "title": title,
                     "dateandtime": {
                         "start": start_str,
@@ -81,7 +84,6 @@ class ZohoCalendarClient:
                         "timezone": "America/Toronto"
                     },
                     "description": description,
-                    "location": location,
                     "isallday": False
                 }
             }

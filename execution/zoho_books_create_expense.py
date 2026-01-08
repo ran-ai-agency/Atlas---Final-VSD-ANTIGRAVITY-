@@ -251,49 +251,91 @@ def create_expense_with_tax(
     return None
 
 
+def check_duplicate(org_id: str, reference_number: str, date: str, amount: float):
+    """Verifie si une depense similaire existe deja."""
+    result = call_tool("ZohoBooks_list_expenses", query_params={"organization_id": org_id})
+
+    if result:
+        expenses = result.get("expenses", [])
+        for exp in expenses:
+            # Verifier par reference_number
+            if exp.get("reference_number") == reference_number:
+                print(f"[DOUBLON] Depense avec ref {reference_number} existe deja (ID: {exp.get('expense_id')})")
+                return True
+            # Verifier par date + montant (approximatif)
+            if exp.get("date") == date and abs(float(exp.get("total", 0)) - amount) < 0.01:
+                print(f"[DOUBLON POTENTIEL] Depense du {date} pour ${amount} existe deja (ID: {exp.get('expense_id')})")
+                return True
+    return False
+
+
 if __name__ == "__main__":
     print("=" * 60)
-    print("ZOHO BOOKS - CREATION DEPENSE POULET ROUGE")
+    print("ZOHO BOOKS - CREATION DEPENSES 2026-01-07")
     print("=" * 60)
 
     ORG_ID = ORGANIZATION_ID
 
-    # Recu Poulet Rouge - 2026-01-06:
-    # Sous-total: $38.58
-    # TPS (5%): $1.93
-    # TVQ (9.975%): $3.85
-    # Total avant pourboire: $44.36
-    # Pourboire: $3.86
-    # Total paye: $48.22
+    # ============================================
+    # 1. STATIONNEMENT - Complexe Desjardins
+    # ============================================
+    print("\n" + "=" * 50)
+    print("1. STATIONNEMENT - Complexe Desjardins")
+    print("=" * 50)
 
-    # 1. Depense principale avec TPS+TVQ
-    print("\n1. Creation depense repas avec taxes...")
-    expense = create_expense_with_tax(
-        org_id=ORG_ID,
-        account_id="89554000000000406",  # Repas et divertissements
-        paid_through_account_id="89554000000057009",  # RBC MasterCard
-        date="2026-01-06",
-        amount=38.58,  # Sous-total avant taxes
-        tax_id="89554000000113107",  # TPS+TVQ Quebec 14.975%
-        vendor_name="Poulet Rouge Ile Perrot",
-        description="Repas d'affaires - Recu #21706",
-        reference_number="21706"
-    )
+    # Verifier doublon
+    if not check_duplicate(ORG_ID, "MEMI1TESH4", "2026-01-07", 25.00):
+        stationnement = create_expense_with_tax(
+            org_id=ORG_ID,
+            account_id="89554000000000376",  # Frais de deplacement
+            paid_through_account_id="89554000000057009",  # RBC MasterCard
+            date="2026-01-07",
+            amount=25.00,  # Pas de taxe sur stationnement
+            tax_id=None,
+            vendor_name="Complexe Desjardins",
+            description="Stationnement - 514 281 7000",
+            reference_number="MEMI1TESH4"
+        )
 
-    # 2. Depense pour le pourboire (sans taxe)
-    print("\n2. Creation depense pourboire...")
-    pourboire = create_expense_with_tax(
-        org_id=ORG_ID,
-        account_id="89554000000000406",  # Repas et divertissements
-        paid_through_account_id="89554000000057009",  # RBC MasterCard
-        date="2026-01-06",
-        amount=3.86,  # Pourboire
-        tax_id=None,  # Pas de taxe
-        vendor_name="Poulet Rouge Ile Perrot",
-        description="Pourboire - Recu #21706",
-        reference_number="21706-TIP"
-    )
+    # ============================================
+    # 2. REPAS - Bellucci Altaglio
+    # ============================================
+    print("\n" + "=" * 50)
+    print("2. REPAS - Bellucci Altaglio")
+    print("=" * 50)
 
-    # Verifier
-    print("\n3. Verification...")
-    list_expenses(ORG_ID, limit=5)
+    # Verifier doublon repas
+    if not check_duplicate(ORG_ID, "76502", "2026-01-07", 13.80):
+        repas = create_expense_with_tax(
+            org_id=ORG_ID,
+            account_id="89554000000000406",  # Repas et divertissements
+            paid_through_account_id="89554000000057009",  # RBC MasterCard
+            date="2026-01-07",
+            amount=12.00,  # Sous-total avant taxes
+            tax_id="89554000000113107",  # TPS+TVQ Quebec 14.975%
+            vendor_name="Bellucci Altaglio",
+            description="Repas d'affaires - 150 Rue Sainte-Catherine, Montreal - Caprese Solo",
+            reference_number="76502"
+        )
+
+    # Verifier doublon pourboire
+    if not check_duplicate(ORG_ID, "76502-TIP", "2026-01-07", 1.20):
+        pourboire = create_expense_with_tax(
+            org_id=ORG_ID,
+            account_id="89554000000000406",  # Repas et divertissements
+            paid_through_account_id="89554000000057009",  # RBC MasterCard
+            date="2026-01-07",
+            amount=1.20,  # Pourboire
+            tax_id=None,
+            vendor_name="Bellucci Altaglio",
+            description="Pourboire - Recu #76502",
+            reference_number="76502-TIP"
+        )
+
+    # ============================================
+    # VERIFICATION FINALE
+    # ============================================
+    print("\n" + "=" * 50)
+    print("VERIFICATION FINALE")
+    print("=" * 50)
+    list_expenses(ORG_ID, limit=6)
