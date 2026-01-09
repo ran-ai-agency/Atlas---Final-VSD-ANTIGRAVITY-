@@ -354,7 +354,7 @@ def send_to_cliq(events: List[Event], channel: str = "veilleia") -> bool:
             "id": 1,
             "method": "tools/call",
             "params": {
-                "name": "ZohoCliq_Post_message_in_a_channel",
+                "name": "Post message in a channel",
                 "arguments": {
                     "path_variables": {"CHANNEL_UNIQUE_NAME": channel},
                     "body": {"text": message}

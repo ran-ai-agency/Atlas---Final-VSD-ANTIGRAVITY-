@@ -74,7 +74,7 @@ ELIA = Claude Opus 4.5 + Zoho MCP + Notion MCP
 | Fonction | Action | Outils |
 |----------|--------|--------|
 | Emails | Tri, reponses type, suivi | Zoho Mail |
-| Calendrier | Planification, rappels, conflits | Zoho Calendar |
+| Calendrier | Planification, rappels, conflits | Google Calendar (écriture) + Zoho Calendar (lecture) |
 | Taches | Creation, suivi, rappels | Notion |
 | Communications | Messages clients, suivis | Zoho Cliq |
 

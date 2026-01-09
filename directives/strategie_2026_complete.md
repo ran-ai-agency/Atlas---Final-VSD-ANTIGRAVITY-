@@ -364,7 +364,7 @@ Infrastructure:     Cloudflare | Modal | Railway
 | Tache | Outil | Automatisation |
 |-------|-------|----------------|
 | Emails | Zoho Mail | Tri auto + templates |
-| Calendrier | Zoho Calendar | Sync Google + rappels |
+| Calendrier | Google Calendar (write) + Zoho Calendar (read) | Sync bidirectionnel + rappels |
 | Taches | Notion | Vues filtrees par priorite |
 | CRM | Zoho CRM | Alertes leads chauds |
 | Compta | Zoho Books | Rappels factures |

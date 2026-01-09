@@ -68,7 +68,9 @@ def call_tool(tool_name: str, query_params: dict = None, body: dict = None, path
 
 def list_bank_accounts(org_id: str):
     """Liste les comptes bancaires."""
-    result = call_tool("ZohoBooks_list_bank_accounts", query_params={"organization_id": org_id})
+    # Note: L'outil "list bank accounts" n'existe pas dans MCP officiel
+    # Utiliser "get bank account" à la place (nécessite un bank_account_id)
+    result = call_tool("get bank account", query_params={"organization_id": org_id})
 
     if result:
         accounts = result.get("bankaccounts", [])
@@ -81,7 +83,9 @@ def list_bank_accounts(org_id: str):
 
 def list_chart_of_accounts(org_id: str):
     """Liste le plan comptable."""
-    result = call_tool("ZohoBooks_list_chart_of_accounts", query_params={"organization_id": org_id})
+    # Note: L'outil "list chart of accounts" n'existe pas dans MCP officiel
+    # Utiliser "get chart of account" à la place (singulier, nécessite un account_id)
+    result = call_tool("get chart of account", query_params={"organization_id": org_id})
 
     if result:
         accounts = result.get("chartofaccounts", [])
@@ -133,8 +137,11 @@ def create_expense(
     print(f"\n=== CRÉATION DE DÉPENSE ===")
     print(f"Body: {json.dumps(body, indent=2)}")
 
+    # ATTENTION: "create expense" n'existe PAS dans MCP officiel
+    # Seul "create recurring expense" existe
+    # Ce script ne fonctionnera probablement pas
     result = call_tool(
-        "ZohoBooks_create_expense",
+        "create recurring expense",
         query_params={"organization_id": org_id},
         body=body
     )
@@ -155,7 +162,7 @@ def create_expense(
 
 def list_expenses(org_id: str, limit: int = 10):
     """Liste les dépenses récentes."""
-    result = call_tool("ZohoBooks_list_expenses", query_params={"organization_id": org_id})
+    result = call_tool("list expenses", query_params={"organization_id": org_id})
 
     if result:
         expenses = result.get("expenses", [])
@@ -172,7 +179,7 @@ def delete_expense(org_id: str, expense_id: str):
     print(f"\n=== SUPPRESSION DE DEPENSE {expense_id} ===")
 
     result = call_tool(
-        "ZohoBooks_delete_expense",
+        "delete expense",
         query_params={"organization_id": org_id},
         path_variables={"expense_id": expense_id}
     )
@@ -185,7 +192,11 @@ def delete_expense(org_id: str, expense_id: str):
 
 def list_taxes(org_id: str):
     """Liste les taxes disponibles."""
-    result = call_tool("ZohoBooks_list_taxes", query_params={"organization_id": org_id})
+    # ATTENTION: "list_taxes" n'existe PAS dans MCP officiel
+    # Il n'y a pas d'équivalent disponible
+    print("[WARNING] L'outil 'list_taxes' n'existe pas dans le MCP Zoho Books officiel")
+    return []
+    # result = call_tool("list_taxes", query_params={"organization_id": org_id})
 
     if result:
         taxes = result.get("taxes", [])
@@ -229,8 +240,11 @@ def create_expense_with_tax(
     print(f"\n=== CREATION DE DEPENSE ===")
     print(f"Body: {json.dumps(body, indent=2)}")
 
+    # ATTENTION: "create expense" n'existe PAS dans MCP officiel
+    # Seul "create recurring expense" existe
+    # Ce script ne fonctionnera probablement pas
     result = call_tool(
-        "ZohoBooks_create_expense",
+        "create recurring expense",
         query_params={"organization_id": org_id},
         body=body
     )
@@ -253,7 +267,7 @@ def create_expense_with_tax(
 
 def check_duplicate(org_id: str, reference_number: str, date: str, amount: float):
     """Verifie si une depense similaire existe deja."""
-    result = call_tool("ZohoBooks_list_expenses", query_params={"organization_id": org_id})
+    result = call_tool("list expenses", query_params={"organization_id": org_id})
 
     if result:
         expenses = result.get("expenses", [])

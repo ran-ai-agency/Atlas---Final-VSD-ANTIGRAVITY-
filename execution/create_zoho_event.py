@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 """
+⚠️ DEPRECATED: Ce script est déprécié depuis le 8 janvier 2026.
+Utiliser Google Calendar pour créer des événements.
+Voir: execution/DEPRECATED_ZOHO_CALENDAR_SCRIPTS.md
+
 Crée un événement dans Zoho Calendar via MCP
 """
 

@@ -54,7 +54,7 @@ ELIA = Claude Opus 4.5 + Zoho MCP + Notion MCP
 
 | Agent | Role | Mission | Outils MCP |
 |-------|------|---------|------------|
-| **AV** | Assistant Virtuel | Taches admin, organisation | Mail, Calendar, CRM |
+| **AV** | Assistant Virtuel | Taches admin, organisation | Mail, Google Calendar (write), Zoho Calendar (read), CRM |
 | **COO** | Operations | Projets, livraisons | Projects, CRM, WorkDrive |
 | **CFO** | Finance | Rentabilite, conformite | Books, CRM |
 | **CMO** | Marketing | Prospects, conversion | CRM, Mail, Cliq |

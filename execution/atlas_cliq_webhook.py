@@ -85,7 +85,7 @@ def post_to_cliq_channel(message: str, channel_name: str = ATLAS_CHANNEL_NAME) -
     return call_mcp_tool(
         ZOHO_CLIQ_MCP_URL,
         ZOHO_CLIQ_MCP_KEY,
-        "ZohoCliq_Post_message_in_a_channel",
+        "Post message in a channel",
         {
             "body": {"text": message},
             "path_variables": {"CHANNEL_UNIQUE_NAME": channel_name}
@@ -218,7 +218,7 @@ if __name__ == "__main__":
         result = call_mcp_tool(
             ZOHO_CLIQ_MCP_URL,
             ZOHO_CLIQ_MCP_KEY,
-            "ZohoCliq_List_all_channels",
+            "List all channels",
             {"query_params": {"name": "Atlas"}}
         )
         print(f"Canal Atlas: {result}")

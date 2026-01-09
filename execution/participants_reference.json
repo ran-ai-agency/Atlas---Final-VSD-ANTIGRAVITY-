@@ -1,0 +1,125 @@
+{
+  "groupe": "GR International Vaudreuil-Dorion 1",
+  "participants": [
+    {
+      "prenom": "Roland",
+      "nom": "Ranaivoarison",
+      "entreprise": "Ran.AI Agency",
+      "role": "Secrétaire-Trésorier",
+      "email": "roland@ran-ai-agency.ca",
+      "telephone": "514-918-1241",
+      "specialite": "Consultant IA / IA Agentique"
+    },
+    {
+      "prenom": "Mylène",
+      "nom": "Sauvé",
+      "entreprise": "Zen Au Quotidien",
+      "role": "Vice-Présidente",
+      "website": "https://www.zenauquotidien.ca/",
+      "calendly": "https://calendly.com/mylenesauve",
+      "specialite": "Maître Qi Gong / Guide intuitive / Voyages"
+    },
+    {
+      "prenom": "Nathalie",
+      "nom": "Cormier",
+      "entreprise": "Coach Neuro-Activ",
+      "role": "Présidente",
+      "calendly": "https://tidycal.com/nathcormier/rda",
+      "specialite": "Neuro-active coaching"
+    },
+    {
+      "prenom": "Audrey",
+      "nom": "Gagnon",
+      "entreprise": "D.A.G Studio",
+      "role": "Membre CA",
+      "telephone": "438-499-3712",
+      "email": "allo@dagstudio.co",
+      "website": "dagstudio.co",
+      "specialite": "Designer UX/UI / Conception web e-commerce",
+      "boite_outils_prevue": "2026-01-22",
+      "boite_outils_sujet": "Web Humain & Stratégique: Les 3 piliers pour ne plus perdre de clients en 2026"
+    },
+    {
+      "prenom": "Jessica",
+      "nom": "Legault",
+      "entreprise": "Confiance Propre",
+      "role": "Membre",
+      "telephone": "514-913-4804",
+      "email": "Confiance.propre@gmail.com",
+      "specialite": "Entretien ménager commercial et résidentiel",
+      "boite_outils_prevue": "2026-01-15",
+      "boite_outils_sujet": "Propreté professionnelle: comment un environnement sain booste votre image et votre efficacité"
+    },
+    {
+      "prenom": "Caroline",
+      "nom": "Cyr",
+      "entreprise": "Primerica",
+      "role": "Membre",
+      "telephone": "514-622-8806",
+      "email": "caroline.cyr@primerica.com",
+      "specialite": "Conseillère en sécurité financière",
+      "boite_outils_prevue": "2026-02-12",
+      "boite_outils_sujet": "Retraite 2026: les nouvelles stratégies pour sécuriser votre avenir financier"
+    },
+    {
+      "prenom": "Véronique",
+      "nom": "Ferland",
+      "entreprise": "Arbonne",
+      "role": "Membre",
+      "facebook": "https://www.facebook.com/veronique.ferland.dastous",
+      "specialite": "Produits de santé et beauté / Nutrition",
+      "notes": "A fait la boîte à outils du 8 janvier 2026 sur 'Changer les Habitudes pour une Meilleure Santé'"
+    },
+    {
+      "prenom": "Suzanne",
+      "nom": "Boisvert",
+      "entreprise": "Thermomix",
+      "role": "Membre",
+      "telephone": "819-821-1306",
+      "specialite": "Robot culinaire Thermomix",
+      "ateliers": "10 jan (St-Jean), 22 jan (Sherbrooke), 3 fév (Laval)"
+    },
+    {
+      "prenom": "Kim",
+      "nom": "Leblanc",
+      "entreprise": "MONAT",
+      "role": "Membre",
+      "facebook": "https://www.facebook.com/kim.leblanc.909712",
+      "specialite": "Produits capillaires MONAT"
+    },
+    {
+      "prenom": "Léo",
+      "nom": "Lemay",
+      "entreprise": "Odotrack",
+      "role": "Membre",
+      "telephone": "514-629-1908",
+      "email": "lemay_leo@hotmail.com",
+      "specialite": "Solutions technologiques pour véhicules",
+      "notes": "Rabais $50 pour membres GR"
+    },
+    {
+      "prenom": "Lyne",
+      "nom": "Savoie",
+      "entreprise": "Cashback",
+      "role": "Gestionnaire de district",
+      "specialite": "Programme cashback"
+    },
+    {
+      "prenom": "Yannick",
+      "nom": "Comtois",
+      "entreprise": "Multi-Prêts",
+      "role": "Visiteur/Invité",
+      "telephone": "514-973-1035",
+      "email": "ycomtois@multi-prets.ca",
+      "specialite": "Courtier hypothécaire",
+      "notes": "Invité le 8 janvier 2026, a quitté prématurément"
+    }
+  ],
+  "erreurs_courantes": {
+    "Véronique Perreault": "Véronique Ferland",
+    "Jessica Lebeau": "Jessica Legault",
+    "Yannick Courtois": "Yannick Comtois",
+    "Lynn Savoie": "Lyne Savoie"
+  },
+  "notes": "Liste mise à jour le 8 janvier 2026. À mettre à jour si de nouveaux membres rejoignent ou si des informations changent."
+}

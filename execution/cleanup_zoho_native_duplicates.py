@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 """
+⚠️ DEPRECATED: Ce script est déprécié depuis le 8 janvier 2026.
+Utiliser Google Calendar pour supprimer des événements.
+Voir: execution/DEPRECATED_ZOHO_CALENDAR_SCRIPTS.md
+
 Supprime les doublons Zoho-natifs en gardant les événements Google-synced
 """
 

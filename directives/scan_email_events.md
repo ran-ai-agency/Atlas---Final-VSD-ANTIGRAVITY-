@@ -48,6 +48,13 @@ Variables d'environnement dans `.env`:
 - `MCP_ZOHO_CLIQ_URL` - URL du MCP Zoho Cliq (pour alertes)
 - `MCP_ZOHO_CLIQ_KEY` - Clé API Cliq
 
+## Politique de gestion du calendrier
+**IMPORTANT**: Pour créer, modifier ou supprimer des événements calendrier, utiliser **Google Calendar**.
+- Zoho Calendar : **Lecture seule** (consultation uniquement)
+- Google Calendar : Toutes opérations d'écriture
+
+Voir [directives/calendar_policy.md](calendar_policy.md) pour plus de détails.
+
 ## Automatisation
 Pour des alertes automatiques, configurer un webhook Modal ou une tâche planifiée Windows:
 
