@@ -600,6 +600,62 @@ function generateRecommendations(responses: DiagnosticResponses, result: Diagnos
     });
   }
 
+  // Recommandations par défaut (toujours affichées)
+  if (recommendations.length === 0) {
+    recId++;
+    recommendations.push({
+      id: `rec_${recId}`,
+      category: 'documentation',
+      priority: 'medium',
+      title: 'Preparer la documentation pour la demande',
+      description: 'Rassemblez les documents necessaires pour votre demande de credit CDAEIA aupres d\'Investissement Quebec.',
+      expectedImpact: 5,
+      effortLevel: 'medium',
+      estimatedWeeks: 2,
+      actionItems: [
+        'Preparer les T4 des employes admissibles',
+        'Documenter les projets IA avec descriptions techniques',
+        'Compiler les feuilles de temps par projet',
+        'Preparer l\'organigramme de l\'equipe technique',
+      ],
+    });
+
+    recId++;
+    recommendations.push({
+      id: `rec_${recId}`,
+      category: 'process',
+      priority: 'low',
+      title: 'Planifier la demande de credit',
+      description: 'Le CDAEIA entre en vigueur en janvier 2026. Planifiez votre demande en avance.',
+      expectedImpact: 5,
+      effortLevel: 'low',
+      estimatedWeeks: 1,
+      actionItems: [
+        'Contacter un CPA specialise en credits d\'impot',
+        'Revoir les criteres d\'eligibilite avec votre equipe',
+        'Planifier une consultation avec Ran.AI Agency',
+      ],
+    });
+  }
+
+  // Ajouter une recommandation de suivi
+  recId++;
+  recommendations.push({
+    id: `rec_${recId}`,
+    category: 'process',
+    priority: 'low',
+    title: 'Consultation gratuite avec Ran.AI Agency',
+    description: 'Discutez de vos resultats avec nos experts pour maximiser votre credit d\'impot CDAEIA.',
+    expectedImpact: 10,
+    effortLevel: 'low',
+    estimatedWeeks: 1,
+    actionItems: [
+      'Planifier un appel de 30 minutes',
+      'Revoir ce rapport ensemble',
+      'Identifier les opportunites d\'optimisation',
+    ],
+  });
+
   // Trier par priorité
   const priorityOrder: Record<Priority, number> = { high: 0, medium: 1, low: 2 };
   recommendations.sort((a, b) => priorityOrder[a.priority] - priorityOrder[b.priority]);
