@@ -1,0 +1,39 @@
+Task ID,Task Name,Start Date,End Date,Duration (Days),Progress (%),Dependencies,Phase,Milestone
+T001,Kick-off meeting client,2025-11-01,2025-11-01,1,0,,Phase 0,Configuration Initiale
+T002,Configuration environnements,2025-11-01,2025-11-02,2,0,T001,Phase 0,Configuration Initiale
+T003,Documentation initiale,2025-11-02,2025-11-03,2,0,T001,Phase 0,Configuration Initiale
+T004,Configuration Genspark IA,2025-11-04,2025-11-08,5,0,T003,Phase 1,Infrastructure
+T005,Setup AI Drive - Base de connaissances,2025-11-04,2025-11-08,5,0,T003,Phase 1,Infrastructure
+T006,Configuration accès verticales,2025-11-09,2025-11-15,7,0,"T004,T005",Phase 1,Infrastructure
+T007,Développement Agent GR International,2025-11-16,2025-11-22,7,0,T006,Phase 1,Agents Spécialisés
+T008,Développement Agent Marketing,2025-11-16,2025-11-22,7,0,T006,Phase 1,Agents Spécialisés
+T009,Développement Agent Écriture,2025-11-16,2025-11-22,7,0,T006,Phase 1,Agents Spécialisés
+T010,Développement Agent Contrats,2025-11-23,2025-11-29,7,0,T006,Phase 1,Agents Spécialisés
+T011,Développement Agent Projet PVA,2025-11-23,2025-11-29,7,0,T006,Phase 1,Agents Spécialisés
+T012,Développement Agent Création Visuelle,2025-11-23,2025-11-29,7,0,T006,Phase 1,Agents Spécialisés
+T013,Création liste 100 questions/tâches tests,2025-11-30,2025-12-06,7,0,"T007,T008,T009,T010,T011,T012",Phase 1,Formation & Tests
+T014,Tests validation 25 scénarios,2025-12-07,2025-12-13,7,0,T013,Phase 1,Formation & Tests
+T015,Formation initiale client (4h),2025-12-14,2025-12-14,1,0,T014,Phase 1,Formation & Tests
+T016,Guide d'utilisation initial,2025-12-08,2025-12-13,6,0,T013,Phase 1,Formation & Tests
+T017,Support 30 jours Phase 1,2025-12-15,2026-01-13,30,0,T015,Phase 1,
+T018,Architecture Control Center Notion,2025-12-16,2025-12-27,12,0,T015,Phase 2,Control Center Notion
+T019,Intégration Notion ↔ Genspark,2025-12-28,2026-01-03,7,0,T018,Phase 2,Control Center Notion
+T020,Dashboards executives,2025-12-28,2026-01-03,7,0,T018,Phase 2,Control Center Notion
+T021,Workflow 1: GR International,2026-01-04,2026-01-10,7,0,T019,Phase 2,Workflows n8n
+T022,Workflow 2: Marketing,2026-01-04,2026-01-10,7,0,T019,Phase 2,Workflows n8n
+T023,Workflow 3: Gestion financière,2026-01-11,2026-01-17,7,0,"T021,T022",Phase 2,Workflows n8n
+T024,Workflow 4: Projet PVA,2026-01-11,2026-01-17,7,0,"T021,T022",Phase 2,Workflows n8n
+T025,Workflow 5: Clients & Support,2026-01-11,2026-01-17,7,0,"T021,T022",Phase 2,Workflows n8n
+T026,Workflows complémentaires (5+),2026-01-18,2026-01-24,7,0,"T023,T024,T025",Phase 2,Workflows n8n
+T027,Intégration Zoho CRM,2026-01-25,2026-02-07,14,0,T026,Phase 2,Intégrations CRM & Finance
+T028,Intégration QuickBooks,2026-01-25,2026-02-07,14,0,T026,Phase 2,Intégrations CRM & Finance
+T029,Intégration Canva,2026-02-08,2026-02-14,7,0,"T027,T028",Phase 2,Intégrations CRM & Finance
+T030,Optimisation prompts avancés,2026-02-15,2026-02-21,7,0,T029,Phase 2,Optimisation & Formation Avancée
+T031,Audit inter-phases complet,2026-02-22,2026-02-28,7,0,T030,Phase 2,Optimisation & Formation Avancée
+T032,Formation avancée client (6h),2026-02-22,2026-02-28,7,0,T030,Phase 2,Optimisation & Formation Avancée
+T033,Documentation avancée,2026-02-22,2026-02-28,7,0,T030,Phase 2,Optimisation & Formation Avancée
+T034,Support 60 jours Phase 2,2026-03-01,2026-04-29,60,0,T032,Phase 2,
+T035,Validation finale client,2026-03-01,2026-03-07,7,0,"T031,T032",Phase 3,Déploiement & Clôture
+T036,Documentation finale & handover,2026-03-01,2026-03-07,7,0,T035,Phase 3,Déploiement & Clôture
+T037,Mesure ROI & success metrics,2026-03-01,2026-03-07,7,0,T035,Phase 3,Déploiement & Clôture
+T038,Plan évolution & scaling,2026-03-01,2026-03-07,7,0,T035,Phase 3,Déploiement & Clôture

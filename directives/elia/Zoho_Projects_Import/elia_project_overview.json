@@ -1,0 +1,168 @@
+{
+  "project_name": "ÉLIA - Développement Équipe de Direction IA",
+  "project_code": "ELIA-SS-2025",
+  "client": {
+    "name": "Sans-Soucis AV",
+    "contact": "Marie Boudreau",
+    "type": "Pioneers Program - Cas Pilote"
+  },
+  "dates": {
+    "start_date": "2025-11-01",
+    "end_date": "2026-03-07",
+    "duration_weeks": "10-14 semaines",
+    "phase_1_duration": "4-6 semaines",
+    "phase_2_duration": "6-8 semaines"
+  },
+  "budget": {
+    "total": "9,250 CAD",
+    "services": "9,000 CAD",
+    "subscriptions": "250 CAD (4 mois)"
+  },
+  "objectives": {
+    "time_saved": "40.5 heures/semaine (75% réduction)",
+    "annual_value": "222,750 CAD",
+    "roi_6_months": "218%",
+    "roi_3_months": "502%",
+    "payback_period": "~3 semaines"
+  },
+  "deliverables": {
+    "roles": 6,
+    "roles_list": ["CEO IA", "COO IA", "CFO IA", "CMO IA", "CTO IA", "AV"],
+    "verticals": 6,
+    "verticals_list": [
+      "GR International (15h → 4h)",
+      "Marketing (8h → 2h)",
+      "Livres (12h → 3h)",
+      "Projet PVA (8h → 2h)",
+      "Clients (7h → 1.5h)",
+      "Création visuelle (4h → 1h)"
+    ],
+    "specialized_agents": 12,
+    "agents_list": [
+      "Super Agent (multi-rôles)",
+      "Agent GR International",
+      "Agent Marketing",
+      "Agent Écriture",
+      "Agent Contrats",
+      "Agent Projet PVA",
+      "Agent Création Visuelle",
+      "IA Image",
+      "IA Sheets",
+      "IA Docs",
+      "Research",
+      "Code"
+    ],
+    "workflows": "10+ workflows n8n",
+    "integrations": [
+      "Zoho CRM",
+      "QuickBooks",
+      "Canva"
+    ],
+    "training_hours": 10,
+    "test_scenarios": 100,
+    "support_days": 90
+  },
+  "tech_stack": {
+    "ai_platform": "Genspark Pro",
+    "memory": "AI Drive (mémoire persistante)",
+    "control_center": "Notion",
+    "automation": "n8n",
+    "crm": "Zoho CRM",
+    "accounting": "QuickBooks",
+    "design": "Canva"
+  },
+  "team": {
+    "project_manager": "Roland Ranaivoarison",
+    "technical_lead": "Roland Ranaivoarison",
+    "ai_copilot": "ATLAS 4.1 Ultra",
+    "client_lead": "Marie Boudreau"
+  },
+  "phases": [
+    {
+      "phase": "Phase 0: Préparation",
+      "duration": "1 semaine",
+      "milestones": 1,
+      "tasks": 3
+    },
+    {
+      "phase": "Phase 1: Fondation & Setup",
+      "duration": "4-6 semaines",
+      "milestones": 3,
+      "tasks": 14,
+      "key_deliverables": [
+        "6 rôles IA opérationnels",
+        "6 agents spécialisés",
+        "100 questions/tests validés",
+        "Formation 4h",
+        "Support 30 jours"
+      ]
+    },
+    {
+      "phase": "Phase 2: Optimisation & Autonomie",
+      "duration": "6-8 semaines",
+      "milestones": 4,
+      "tasks": 17,
+      "key_deliverables": [
+        "Control Center Notion",
+        "10+ workflows n8n",
+        "Intégrations Zoho + QuickBooks + Canva",
+        "Formation avancée 6h",
+        "Support 60 jours"
+      ]
+    },
+    {
+      "phase": "Phase 3: Déploiement & Clôture",
+      "duration": "1 semaine",
+      "milestones": 1,
+      "tasks": 4,
+      "key_deliverables": [
+        "Validation finale",
+        "Documentation complète",
+        "Rapport ROI",
+        "Plan évolution"
+      ]
+    }
+  ],
+  "success_metrics": {
+    "quantitative": {
+      "time_freed_weekly": "40.5 heures",
+      "time_reduction_percentage": "75%",
+      "annual_value_cad": 222750,
+      "roi_6_months_percentage": 218,
+      "roi_3_months_percentage": 502,
+      "operational_roles": 6,
+      "automated_verticals": 6,
+      "validated_tests": 100,
+      "active_workflows": "10+",
+      "major_integrations": 3
+    },
+    "qualitative": [
+      "Satisfaction client",
+      "Autonomie opérationnelle",
+      "Qualité outputs IA",
+      "Adoption utilisateur",
+      "Stabilité système"
+    ]
+  },
+  "risks": [
+    {
+      "risk": "Résistance au changement client",
+      "mitigation": "Formation progressive, support intensif 90 jours"
+    },
+    {
+      "risk": "Complexité intégrations",
+      "mitigation": "Tests validation extensifs, déploiement par phases"
+    },
+    {
+      "risk": "Performance agents IA",
+      "mitigation": "100 tests validation, optimisation continue prompts"
+    }
+  ],
+  "next_steps": [
+    "Import fichiers CSV dans Zoho Projects",
+    "Configuration champs personnalisés",
+    "Assignation membres équipe",
+    "Validation calendrier avec client",
+    "Kick-off meeting"
+  ]
+}

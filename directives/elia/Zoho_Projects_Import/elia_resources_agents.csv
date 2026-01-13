@@ -1,0 +1,14 @@
+Agent Name,Type,Role,Verticale,Primary Functions,Integration,Status,Priority
+Super Agent,Multi-rôles,Orchestrateur,Toutes verticales,"Commutation contexte, coordination 6 rôles, intelligence centrale",Genspark + AI Drive,À développer,Critique
+Agent GR International,Spécialisé,COO IA,GR International,"Suivi membres, reporting district, organisation événements, gestion communications",Zoho CRM + Notion,À développer,Haute
+Agent Marketing,Spécialisé,CMO IA,Marketing,"Création contenu, gestion campagnes, dashboards analytics, planning éditorial",Canva + Social Media,À développer,Haute
+Agent Écriture,Spécialisé,CEO IA,Livres,"Recherche, structuration chapitres, rédaction professionnelle, révision",Google Docs + AI Drive,À développer,Haute
+Agent Contrats,Spécialisé,CFO IA,Clients,"Rédaction contrats, négociation assistée, templates standardisés, validation légale",QuickBooks + Notion,À développer,Haute
+Agent Projet PVA,Spécialisé,COO IA,Projet PVA,"Orchestration développement, veille stratégique, gestion réseau, reporting",Notion + n8n,À développer,Haute
+Agent Création Visuelle,Spécialisé,CMO IA,Création,"Design logos/branding, infographies, templates Canva, assets marketing",Canva + AI Drive,À développer,Moyenne
+IA Image,Technique,Support CTO,Création,"Génération visuels, optimisation images, exports multi-formats",Genspark + Canva,À développer,Moyenne
+IA Sheets,Technique,Support CFO,"Finance, Analytics","Dashboards intelligents, analyses données, rapports automatiques",Google Sheets + QuickBooks,À développer,Moyenne
+IA Docs,Technique,Support CEO,"Documentation, Livres","Rédaction professionnelle, templates documents, formatting automatique",Google Docs + Notion,À développer,Moyenne
+Research Agent,Technique,Support CEO,Toutes verticales,"Veille stratégique, recherche marché, synthèses intelligentes",Web + AI Drive,À développer,Basse
+Code Agent,Technique,Support CTO,Automatisation,"Développement workflows n8n, intégrations API, scripts automatisation",n8n + APIs,À développer,Haute
+Legal Agent,Technique,Support CFO,Clients,"Documentation juridique, conformité, revue contrats",Notion + AI Drive,À développer,Basse

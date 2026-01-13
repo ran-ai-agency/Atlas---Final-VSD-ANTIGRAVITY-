@@ -7,6 +7,7 @@
 credentials.json
 token.json
 token_*.json
+gmail_token.json
 
 # Temporary files
 nul

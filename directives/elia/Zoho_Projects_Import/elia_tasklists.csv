@@ -1,0 +1,11 @@
+Task List Name,Description,Phase
+Préparation,Configuration initiale et documentation avant lancement,Phase 0: Préparation
+Infrastructure,Setup Genspark + AI Drive + Verticales,Phase 1: Fondation & Setup
+Agents Spécialisés,Développement 6 agents IA par verticale,Phase 1: Fondation & Setup
+Formation & Tests,Tests validation et formation initiale,Phase 1: Fondation & Setup
+Support,Support continu Phase 1 et Phase 2,Phase 1 & 2
+Control Center,Architecture et intégration Notion,Phase 2: Optimisation & Autonomie
+Workflows n8n,Automatisations workflows,Phase 2: Optimisation & Autonomie
+Intégrations,Intégrations Zoho CRM + QuickBooks + Canva,Phase 2: Optimisation & Autonomie
+Optimisation,Optimisation prompts et audit,Phase 2: Optimisation & Autonomie
+Clôture,Validation finale et documentation complète,Phase 3: Déploiement & Clôture

@@ -1,0 +1,10 @@
+Milestone Name,Description,Start Date,End Date,Phase,Status,Owner
+Configuration Initiale,Setup environnements et documentation de base avant démarrage Phase 1,2025-11-01,2025-11-03,Phase 0: Préparation,Open,Roland Ranaivoarison
+Infrastructure,"Configuration Genspark IA, AI Drive, et accès aux 6 verticales",2025-11-04,2025-11-15,Phase 1: Fondation & Setup,Open,Roland Ranaivoarison
+Agents Spécialisés,Développement des 6 agents IA spécialisés par verticale,2025-11-16,2025-11-29,Phase 1: Fondation & Setup,Open,Roland Ranaivoarison
+Formation & Tests,Tests validation 100 questions et formation initiale client,2025-11-30,2025-12-14,Phase 1: Fondation & Setup,Open,Roland Ranaivoarison
+Control Center Notion,"Architecture, intégration Notion-Genspark, dashboards executives",2025-12-16,2026-01-03,Phase 2: Optimisation & Autonomie,Open,Roland Ranaivoarison
+Workflows n8n,Développement 10+ workflows d'automatisation,2026-01-04,2026-01-24,Phase 2: Optimisation & Autonomie,Open,Roland Ranaivoarison
+Intégrations CRM & Finance,Intégration Zoho CRM + QuickBooks + Canva,2026-01-25,2026-02-14,Phase 2: Optimisation & Autonomie,Open,Roland Ranaivoarison
+Optimisation & Formation Avancée,"Optimisation prompts, audit, formation avancée 6h",2026-02-15,2026-02-28,Phase 2: Optimisation & Autonomie,Open,Roland Ranaivoarison
+Déploiement & Clôture,"Validation finale, documentation, ROI, plan évolution",2026-03-01,2026-03-07,Phase 3: Déploiement & Clôture,Open,Roland Ranaivoarison

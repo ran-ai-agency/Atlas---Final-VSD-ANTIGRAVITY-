@@ -303,7 +303,7 @@ Le programme pilote compte **8 entrepreneurs actifs**. Opportunites de temoignag
 
 | Entrepreneur | Entreprise | Secteur | IA | Satisfaction |
 |--------------|-----------|---------|-------|--------------|
-| **Jessica Harvey** | Groupe Harvey Securite Financiere | Finance | HARVEY.AI | Excellente |
+| Jessica Harvey | Groupe Harvey Securite Financiere | Finance | HARVEY.AI | Non demarre |
 | **Audrey Gagnon** | D.A.G Studio | Design | NOVA | Excellente |
 | **Nathalie Cormier** | Phase1 Movement / GR | Coaching | NEXUS | Tres bonne |
 | **Mylene Sauve** | Maitre du Voyage | Voyage | NAVIGATOR | Tres bonne |
@@ -314,9 +314,9 @@ Le programme pilote compte **8 entrepreneurs actifs**. Opportunites de temoignag
 
 **Priorite temoignages**:
 1. Marie Boudreau (ELIA) - En cours
-2. Jessica Harvey (Excellente satisfaction)
-3. Audrey Gagnon (Excellente satisfaction + membre GR)
-4. Nathalie Cormier (Presidente GR Vaudreuil)
+2. Audrey Gagnon (Excellente satisfaction + membre GR)
+3. Nathalie Cormier (Presidente GR Vaudreuil)
+4. Jessica Harvey (A relancer - non demarre)
 
 ---
 

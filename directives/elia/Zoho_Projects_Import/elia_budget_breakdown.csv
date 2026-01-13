@@ -1,0 +1,18 @@
+Category,Item,Unit Cost (CAD),Quantity,Total (CAD),Phase,Notes
+Services Professionnels,Consultation & Architecture,1500,1,1500,Phase 0 & 1,Setup initial et design système
+Services Professionnels,Développement Agents IA,800,6,4800,Phase 1,6 agents spécialisés par verticale
+Services Professionnels,Configuration Control Center,600,1,600,Phase 2,Architecture Notion
+Services Professionnels,Développement Workflows n8n,150,10,1500,Phase 2,10+ workflows automatisés
+Services Professionnels,Intégrations (Zoho/QB/Canva),300,1,300,Phase 2,3 intégrations majeures
+Services Professionnels,Formation Client,100,10,1000,Phase 1 & 2,10h formation (4h + 6h)
+Services Professionnels,Documentation & Support,50,60,3000,Phase 1 & 2,90 jours support
+Abonnements,Genspark Pro,75,4,300,Phase 1 & 2,4 mois abonnement
+Abonnements,n8n Pro,20,4,80,Phase 2,Automatisations avancées
+Abonnements,Notion Team,10,4,40,Phase 1 & 2,Control Center
+Abonnements,AI Drive Storage,15,4,60,Phase 1 & 2,Mémoire persistante
+,,,,,,
+Total Services Professionnels,,,,"9,700 CAD",,
+Total Abonnements,,,,"480 CAD",,
+TOTAL PROJET,,,,"10,180 CAD",,
+,,,,,,
+Note: Budget présenté client,,,,"9,250 CAD",,Optimisation commerciale Pioneers Program

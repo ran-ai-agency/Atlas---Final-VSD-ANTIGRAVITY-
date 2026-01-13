@@ -1,0 +1,16 @@
+Risk ID,Risk Description,Category,Probability,Impact,Risk Score,Mitigation Strategy,Owner,Status,Monitoring
+R01,Résistance au changement client,Adoption,Medium,High,8,Formation progressive 10h + support intensif 90 jours + démos régulières,Roland,Active,Weekly check-ins
+R02,Complexité intégrations techniques,Technique,High,High,9,"Tests validation extensifs, déploiement par phases, rollback plan",Roland,Active,Tests continus
+R03,Performance agents IA insuffisante,Qualité,Medium,High,8,100 tests validation + optimisation continue prompts + A/B testing,ATLAS,Active,KPI tracking
+R04,Dépassement budget projet,Finance,Low,Medium,4,Budget buffer 10% + tracking hebdomadaire + approval changements,Roland,Active,Budget dashboard
+R05,Retard planning développement,Planning,Medium,Medium,6,Buffers temporels intégrés + daily standups + priorisation agile,Roland,Active,Gantt monitoring
+R06,Perte données / mémoire IA,Technique,Low,High,6,Backup automatique AI Drive + versioning Notion + redondance,ATLAS,Active,Automated backups
+R07,Indisponibilité outils tiers (Genspark),Dépendance,Low,High,6,Solutions fallback + diversification stack + SLA monitoring,Roland,Active,Uptime monitoring
+R08,Manque adoption verticales spécifiques,Adoption,Medium,Medium,6,Champions par verticale + quick wins early + feedback loops,Roland,Monitoring,Adoption metrics
+R09,Qualité outputs IA variable,Qualité,Medium,Medium,6,Validation humaine systématique + guidelines strictes + feedback client,ATLAS,Active,Quality checks
+R10,Scalabilité limitée post-déploiement,Stratégique,Low,Medium,4,Architecture modulaire + documentation scaling + plan évolution,Roland,Planning,Post-deployment
+R11,Sécurité et confidentialité données,Sécurité,Medium,High,8,Encryption data + accès contrôlés + compliance RGPD + audits,Roland,Active,Security audits
+R12,Surcharge cognitive client (trop outils),UX,Medium,Medium,6,Interface unifiée Notion + formation UX + simplification workflows,Roland,Active,User feedback
+R13,Dépendance unique fournisseur IA,Stratégique,Low,Medium,4,Multi-provider strategy évaluation + exit plan documentation,Roland,Monitoring,Quarterly review
+R14,Non-atteinte ROI promis (218%),Business,Low,High,6,Tracking métriques réalistes + ajustements continus + expectations management,Roland,Active,ROI dashboard
+R15,Turnover équipe Ran.AI,Ressources,Low,High,6,Documentation exhaustive + knowledge transfer + ATLAS backup,Roland,Monitoring,Team stability
